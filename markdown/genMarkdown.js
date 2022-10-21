@@ -2,59 +2,59 @@ const fs = require("fs");
 
 function generateMarkdown(data) {
     return  `
-    # ${data.title}
+# ${data.title}
 
-    ${data.badge}
+${data.badge}
 
 
-    ## Table of Content
-    * [Project Discription]
-    * [Installation]
-    * [Usage]
-    * [License]
-    * [Contribution]
-    * [Test]
-    * [Mock Up]
-    * [Deployed URL]
-    * [GitHub]
-    * [Contact]
+## Table of Content
+* [Project Discription](#discription)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Test](#test)
+* [Mock Up](#mockup)
+* [Deployed URL](#deployedurl)
+* [GitHub](#github)
+* [Contact](#contact)
 
-    ## Discription
+## Discription
 
     ${data.discription}
 
-    ## Installation
+## Installation
     ${data.installation}
 
-    ## Usage
+## Usage
     ${data.usage}
 
-    ## License
+## License
     ${data.license}
 
-    ## Contribution
+## Contribution
     ${data.contribution}
 
-    ## Test
+## Test
     ${data.test}
 
-    ## Mock Up
+## Mock Up
     ${data.mockup}
 
-    ## Deployed URL
+## Deployed URL
     ${data.deployedurl}
 
-    ## GitHub
+## GitHub
     ${data.github}
 
-    ## Contact
+## Contact
     ${data.contact}
     `;
 }
 
  function writeFile (data) {
      return new Promise((resolve, reject) => {
-        fs.writeFile("./README.md", generateMarkdown(data), (err) => {
+        fs.writeFile("./markdown/README.md", generateMarkdown(data), (err) => {
             if (err) {
                  reject(err);
                  return;
