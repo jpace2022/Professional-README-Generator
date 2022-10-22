@@ -1,5 +1,5 @@
 
-# Readme generator
+# Readme Generator 
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
@@ -19,22 +19,22 @@
 
 # Discription
 
-    It should generate a readme file for the user. 
+    When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project.  
 
 # Installation
-    Used npm i prompt to load inquirer
+    Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project. 
 
 # Usage
-    To generate readme files.
+    Repo is used to product a professional readme file.
 
 # License
-    
+    (https://opensource.org/licenses/MIT)
 
 # Contribution
-    James Pace is the author. GitHub username is pacej2022.
+    James Pace. Repo username is pacej2022.  
 
 # Test
-    None
+    Node index.js 
 
 # Mock Up
     N/A
