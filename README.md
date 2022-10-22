@@ -80,9 +80,9 @@ Build a timed quiz that includes both multiple-choice questions and interactive 
 - THEN I am taken to the corresponding section of the README
 
 ## Screenshot Image
-![ReadMe File Generator]()
-![ReadMe File Generator]()
-![ReadMe File Generator]()
+![ReadMe File Generator](https://github.com/jpace2022/Professional-README-Generator/blob/main/pics/readme%20file.png?raw=true)
+![ReadMe File Generator](https://github.com/jpace2022/Professional-README-Generator/blob/main/pics/terminal%20image%202.png?raw=true)
+![ReadMe File Generator](https://github.com/jpace2022/Professional-README-Generator/blob/main/pics/terminal%20image.png?raw=true)
 
 ## Finished Website
 [ReadMe File Generator(#)]
