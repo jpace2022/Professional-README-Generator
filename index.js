@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const {writeFile} = require("./markdown/genMarkdown.js")
@@ -10,12 +10,12 @@ const questions = () => {
         {
        type: 'input',
        name: 'title',
-       message: 'What is your GitHub user name',
+       message: 'What is the title of your project?',
      },
      {
         type: 'input',
         name: 'discription',
-        message: 'Please provide a Project discription here.',
+        message: 'Please discribe your project here.',
        },
        {
         type: 'input',
@@ -30,7 +30,7 @@ const questions = () => {
        {
         type: 'input',
         name: 'contribution',
-        message: 'Who contributed to the project?',
+        message: 'Who contributed to the project? Please provide github user name as well.',
        },
        {
         type: 'input',
@@ -45,7 +45,7 @@ const questions = () => {
        {
         type: 'input',
         name: 'mockup',
-        message: 'Please provide a project mockup. Use "<img src="">"',
+        message: 'Please provide a project mockup.',
        },
        {
         type: 'input',
@@ -56,6 +56,11 @@ const questions = () => {
         type: 'input',
         name: 'github',
         message: 'Enter GitHub repo here.',
+       },
+       {
+        type: 'input',
+        name: 'contact',
+        message: 'Please enter yoour contact information here.',
        },
        {
         type: 'checkbox',

@@ -2,14 +2,14 @@ const fs = require("fs");
 
 function generateMarkdown(data) {
     if (data.license === "MIT License") {
-        data.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        data.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
     }
-    if (data.license === "Apache 2.0") "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/Apache-2.0)"
-    
+    if (data.license === "Apache 2.0") "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/Apache-2.0)";
 }
 
 // Create a function to generate README file
 function generateMarkdown(data) {
+
     return  `
 # ${data.title}
 
@@ -17,16 +17,17 @@ function generateMarkdown(data) {
 
 
 ## Table of Content
-* [Project Discription](#discription)
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contribution](#contribution)
-* [Test](#test)
-* [Mock Up](#mockup)
-* [Deployed URL](#deployedurl)
-* [GitHub](#github)
-* [Contact](#contact)
+* [Title]
+* [Discription]
+* [Installation]
+* [Usage]
+* [License]
+* [Contribution]
+* [Test]
+* [Mock-Up]
+* [Deployed-URL]
+* [GitHub]
+* [Contact]
 
 # Discription
 
