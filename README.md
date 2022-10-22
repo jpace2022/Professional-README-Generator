@@ -39,9 +39,6 @@ Because this application won’t be deployed, you’ll also need to provide a li
 ## Usage
     Able to create new readme files. 
 
-
-    
-
 ## Contribution
     James Pace
 
@@ -54,8 +51,8 @@ Because this application won’t be deployed, you’ll also need to provide a li
 ## Deployed URL
     n/a
 
-## GitHub
-    https://github.com/jpace2022/Professional-README-Generator
+## GitHub Repo
+   [ReadMe File Generator (https://github.com/jpace2022/Professional-README-Generator)] 
 
 ## Contact
     For any questions or concerns, contact me at my email: pacej2022@gmail.com

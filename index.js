@@ -3,12 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const {writeFile} = require("./markdown/genMarkdown.js")
 
-// TODO: Create a function to initialize app
-
-// Function call to initialize app
-
-   
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 
 const questions = () => {
     return inquirer.prompt([
@@ -64,34 +59,32 @@ const questions = () => {
        },
        {
         type: 'checkbox',
-        name: 'license',
+        name: 'badge',
         message: 'Please select a project license badge.',
         choices: [
-            "**Apache** [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)(#license)",
-            "**Eclipse** [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)(#license)",
-            "**MIT** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)(#license)",
-            "**Mozilla** [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)(#license)"
-        ]
+            "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]",
+            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
+        ],
        },
        {
         type: 'checkbox',
         name: 'license',
         message: 'Please select the corrisponding license to selected badge.',
         choices: [
-            "**Apache** (https://opensource.org/licenses/Apache-2.0)",
-            "**Eclipse** (https://opensource.org/licenses/EPL-1.0)",
-            "**MIT** (https://opensource.org/licenses/MIT)",
-            "**Mozilla** (https://opensource.org/licenses/MPL-2.0)"
-        ]
+            "(https://opensource.org/licenses/Apache-2.0)",
+            "(https://opensource.org/licenses/MIT)",
+        ],
        },
 
     ]);
 }
-// TODO: Create a function to write README file
+//Create a function to initialize app
 function init() {
-    questions().then((data)=> {
+    questions().then((data) => {
         writeFile(data);
     });
 }
 
+
+// Function to initialize app
 init();

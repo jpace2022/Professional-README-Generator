@@ -1,10 +1,19 @@
 const fs = require("fs");
 
 function generateMarkdown(data) {
+    if (data.license === "MIT License") {
+        data.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+    if (data.license === "Apache 2.0") "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/Apache-2.0)"
+    
+}
+
+// Create a function to generate README file
+function generateMarkdown(data) {
     return  `
 # ${data.title}
 
-${data.badge}
+ ${data.badge}
 
 
 ## Table of Content
@@ -19,37 +28,38 @@ ${data.badge}
 * [GitHub](#github)
 * [Contact](#contact)
 
-## Discription
+# Discription
 
     ${data.discription}
 
-## Installation
+# Installation
     ${data.installation}
 
-## Usage
+# Usage
     ${data.usage}
 
-## License
+# License
     ${data.license}
 
-## Contribution
+# Contribution
     ${data.contribution}
 
-## Test
+# Test
     ${data.test}
 
-## Mock Up
+# Mock Up
     ${data.mockup}
 
-## Deployed URL
+# Deployed URL
     ${data.deployedurl}
 
-## GitHub
+# GitHub
     ${data.github}
 
-## Contact
+# Contact
     ${data.contact}
-    `;
+    
+    `
 }
 
  function writeFile (data) {
@@ -59,11 +69,13 @@ ${data.badge}
                  reject(err);
                  return;
              }
-             resolve({ok: true, message: "A README.md was created."});
+             resolve({ok: true, message: ""});
          });
      });
  };
+ 
 
  module.exports = {
      writeFile,
  };
+ 
